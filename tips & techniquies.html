@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-top {
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            text-align: center;
+        }
+
+        .navbar-brand img {
+            box-sizing: border-box;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 1rem;
+        }
+
+        .nav-link:hover {
+            color: red;
+        }
+
+        /* banner */
+        .carousel-item {
+            height: 710px;
+        }
+
+        .d-block {
+            height: 960px;
+            margin-left: -26rem;
+            margin-top: -10rem;
+            width: 200rem;
+        }
+
+        /* book */
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2e8b57;
+        }
+
+        .book-img {
+            height: 600px;
+            transition: 0.3s;
+        }
+
+        .book-img:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            padding-top: 28px;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(88, 86, 86);
+        }
+
+        .p1 {
+            font-size: 22px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(88, 86, 86);
+        }
+        .p2{
+            font-size: 25px;
+            color: #2e8b57;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* footer */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .footer h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-top">
+        <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PLANTS AND SEEDS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+                            <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            GARDEN CARE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="garden care.html">SOIL</a></li>
+                            <li><a class="dropdown-item" href="garden care.html">FERTILIZER</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="garden care.html">PEPTICIDES</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ACCESSORIES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="accessories.html">GARDEN TOYS</a></li>
+                            <li><a class="dropdown-item" href="accessories.html">DECORATIVE PEBBLES</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="accessories.html">TOOLS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tips & techniquies.html">TIPS AND TECHNIQUES</a></li>
+
+                </ul>
+                <div class="d-flex">
+                    <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></i></a>
+                    <a class="nav-link" href="login.html"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></i></a>
+                </div>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/e-project/assets/images/banner.png" class="d-block  " alt="banner">
+            </div>
+        </div>
+    </div>
+
+    <!-- heading -->
+    <div class="container mt-5">
+        <h3>THE ART OF GROWING YOUR DREAM GARDEN</h3>
+        <hr>
+    </div>
+
+    <!-- books -->
+    <div class="container-fluid p-5">
+        <div class="row">
+            <!-- Image 1 -->
+            <div class="col-12 col-md-4">
+                <a href="https://a.co/d/gsWlvTJ" target="_blank">
+                    <img src="/e-project/assets/images/book1.jpg" class="book-img img-fluid" alt="Book 1">
+                </a>
+                <h2>BOOK DESCRIPTION</h2>
+                <p class="p1">Houseplants are a great way to decorate, ease stress, and stay connected with nature when
+                    you're
+                    indoors. If you're looking to grow your collection and need some advice, Houseplants for Beginners
+                    has all the information you'll need to successfully care for your plants and help them thrive.
+
+                    Learn how to shop for and repot houseplants, choose the best place in your home for them, and
+                    address a variety of challenges like pests and diseases. With 120 common houseplant profiles grouped
+                    from low maintenance to high maintenance, you can familiarize yourself with individual plant needs
+                    and choose the best ones for your lifestyle.</p>
+            </div>
+            <!-- Image 2 -->
+            <div class="col-12 col-md-4">
+                <a href="https://a.co/d/apRSo3k" target="_blank">
+                    <img src="/e-project/assets/images/book2 (1).jpg" class="book-img img-fluid" alt="Book 2">
+                </a>
+                <h2>BOOK DESCRIPTION</h2>
+                <p class="p1">Gardeners never forget the first time they enjoyed a ripe, juicy tomato plucked straight
+                    from the
+                    vine or savored a crisp, fresh salad made with ingredients from their backyard. Start growing your
+                    first crop today withVegetable Gardening for Beginners. Host of The Beginner's Garden podcast Jill
+                    McSheehy offers simple guidance to first-time gardeners who will be amazed at how easy it can be to
+                    create a thriving garden.</p>
+            </div>
+            <!-- Image 3 -->
+            <div class="col-12 col-md-4">
+                <a href="https://a.co/d/2Do13hk" target="_blank">
+                    <img src="/e-project/assets/images/book3 (1).jpg" class="book-img img-fluid" alt="Book 3">
+                </a>
+                <h2>BOOK DESCRIPTION</h2>
+                <p class="p1">Do you find joy in seeing a plant grow from seed to flower? Has your main setback for
+                    maintaining a
+                    successful garden been finding enough time to tend it?
+                    Whether you have a windowsill garden or a backyard full of flora, finding time to garden can seem
+                    impossible. But with just 5 minutes a day, you can be sure your plants have all they need to go from
+                    seed to delicious harvest. Nicole Johnsey Burke, author of Kitchen Garden Revival and Leaves, Roots
+                    & Fruit and founder of Gardenary, Inc., guides you through the different planting seasons</p>
+            </div>
+            <!-- Image 4 -->
+            <div class="col-12 col-md-4">
+                <a href="https://a.co/d/0KPg10a" target="_blank">
+                    <img src="/e-project/assets/images/book4.jpg" class="book-img img-fluid" alt="Book 4">
+                </a>
+                <h2>BOOK DESCRIPTION</h2>
+                <p class="p1">A one-of-a-kind guide to growing, cutting, and arranging the most beautiful roses in the
+                    world,
+                    Garden Roses belongs in the hands of every flower lover. Created by Gracielinda Poulson, the
+                    preeminent rose grower in the country and proprietor of Grace Rose Farm, each page of this glorious
+                    book steeps the reader in the iconic mystique of the rose: Its breathtaking beauty, in hundreds of
+                    photographs. Its secrets, in the incredible breadth of information on the varieties best suited for
+                    cutting and how to raise them to thrive in the garden or a container, in almost any climate zone.
+                </p>
+            </div>
+            <!-- Image 5 -->
+            <div class="col-12 col-md-4">
+                <a href="https://a.co/d/26kV3BS" target="_blank">
+                    <img src="/e-project/assets/images/book5.jpg" class="book-img img-fluid" alt="Book 5">
+                </a>
+                <h2>BOOK DESCRIPTION</h2>
+                <p class="p1">Do you dream of walking through your own kitchen garden with baskets full of delicious
+                    food you grew
+                    yourself? But are you waiting to begin because you think you don't have enough space, sun, time, or
+                    experience?
+
+                    Then consider this: Plants want to grow. And when you match a plant's needs to your own resources,
+                    you're just one step away from success in the kitchen garden.
+
+                    Nicole Johnsey Burke—founder of Gardenary, Inc., and author of Kitchen Garden Revival—is your expert
+                    guide for growing your own fresh, organic food every day of the year, no matter where you grow.</p>
+            </div>
+            <!-- Image 6 -->
+            <div class="col-12 col-md-4">
+                <a href="https://a.co/d/inAigxu" target="_blank">
+                    <img src="/e-project/assets/images/book6.jpg" class="book-img img-fluid" alt="Book 6">
+                </a>
+                <h2>BOOK DESCRIPTION</h2>
+                <p class="p1">Dreaming of having the perfect garden? Does it have a vegetable patch? Classic borders or
+                    flowers to
+                    attract wildlife? A picturesque garden for all to marvel at is achievable with this gardening guide,
+                    which gives you vital tools to achieve whatever you desire for your dream garden. </p>
+            </div>
+            <hr>
+            <p class="p2">"Gardening is a journey that combines patience, knowledge, and a deep appreciation for nature.
+                By applying the tips and techniques shared on this page, you can cultivate a garden that not only
+                thrives but also brings joy and tranquility to your life. Remember, every garden is unique, and the most
+                beautiful ones are those nurtured with love and dedication."</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-2">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Terms</a></li>
+                        <li><a href="#">Warranty & Repair</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Payment Policy</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Kors Services</a></li>
+                    </ul>
+                </div>
+                <!-- My Account -->
+                <div class="col-md-2">
+                    <h5>My Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Accounts</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">KORSVIP</a></li>
+                        <li><a href="#">Give 10%, Get 10%</a></li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div class="col-md-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Supply Chain Disclosure</a></li>
+                        <li><a href="#">Corporate Social Responsibility</a></li>
+                    </ul>
+                </div>
+                <!-- Subscription Form -->
+                <div class="col-md-4">
+                    <h5>Sign Up</h5>
+                    <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="social-icons m-4">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid p-2 bg-dark">
+        <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+         
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

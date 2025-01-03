@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia Garden Products Money Tree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar-top">
+        <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PLANTS AND SEEDS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+                            <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            GARDEN CARE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="garden care.html">SOIL & FERTILIZER</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="garden care.html">PEPTICIDES</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ACCESSORIES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#toys">GARDEN TOYS</a></li>
+                            <li><a class="dropdown-item" href="#pot">DECORATIVE PEBBLES & POTS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#tool">TOOLS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tips & techniquies.html">TIPS AND TECHNIQUES</a></li>
+
+                </ul>
+                <div class="d-flex">
+                    <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></a>
+                    <a class="nav-link" href="login.html"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></a>
+                </div>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img id="main-image" src="/e-project/assets/images/Arcadia Garden Products Money Tree.webp"
+                    alt="Arcadia Garden Products Money Tree" class="img-fluid rounded">
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <img src="/e-project/assets/images/Arcadia Garden Products Money Tree1.webp" alt="Money Tree thumbnail"
+                        class="img-thumbnail mx-1 thumbnail" style="width: 70px; height: 70px;"
+                        onclick="changeImage(this.src)">
+                    <img src="/e-project/assets/images/Arcadia Garden Products Money Tree2.webp" alt="Money Tree Thumbnail"
+                        class="img-thumbnail mx-1 thumbnail" style="width: 70px; height: 70px;"
+                        onclick="changeImage(this.src)">
+                    <img src="/e-project/assets/images/Arcadia Garden Products Money Tree.webp" alt="Money Tree Thumbnail"
+                        class="img-thumbnail mx-1 thumbnail" style="width: 70px; height: 70px;"
+                        onclick="changeImage(this.src)">
+                </div>
+            </div>
+
+            <!-- Details Section -->
+            <div class="col-md-6">
+                <h1 class="display-6">Arcadia Garden Products Money Tree</h1>
+                <p class="text-muted">PLANT SECTION</p>
+                <h3 class="text-primary">$49.99</h3>
+
+                <h5>. Plant or Animal Product Type: Pachira</h5>
+                <h5>. Indoor/Outdoor Usage: Indoor</h5>
+                <h5>. Color: Black</h5>
+                <h5>. Special Feature: Lightweight</h5>
+                <h5>. Item Weight: 16 ounces</h5>
+                <h5>. Sunlight Exposure: Partial Sun</h5>
+                <h5>. Unit Count: 1.0 Count</h5>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" class="form-control" value="1" min="1">
+                </div>
+
+                <div class="d-flex gap-2">
+                    <button class="btn btn-danger">Add to Cart</button>
+                    <button class="btn btn-primary">Buy with Shop Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5 text-center">
+        <div class="mb-2">
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+            <p class="mb-1">3400+ REVIEWS & 4.9 RATING</p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <hr>
+        <h1 class="text-center">ABOUT THIS PRODUCT</h1>
+        <hr>
+        <p>Looking for an easy-care indoor plant to enjoy? This Money Tree plant from Arcadia Garden Products arrives
+            with minimal care requirements. Count on success if moderate light is available and overwatering does not
+            occur. Also called Pachira, the Money Tree is keenly appreciated as an instant decor item for the home or
+            office. Many people select Money Tree plants to give as gifts for meaningful occasions. A widely followed
+            belief asserting that positive energy is created by the Money Tree encourages people to prepare for
+            impending good luck. Including the container, the height of this plant ranges from 14 to 16 inches. It
+            arrives potted in a 4-inch plastic grow pot that can easily be placed inside an embellished container to
+            complement your interior plant collection.</p>
+        <p>. LOW MAINTENANCE INDOOR PLANT: Moderate light & not overwatering are the minimal care requirements</p>
+        <p>. GROWN BY EXPERTS: With years of greenhouse experience, expert growers meticulously oversee production
+        of this Money Tree</p>
+        <p>. POSITIVE ENERGY: Many plant enthusiasts follow the belief that positive energy is created by the
+        Money Tree</p>
+        <p>. GREAT GIFT PLANT:Ideal for the dorm, Grandparent's Day, graduation, job promotion, birthdays, &
+        other occasions</p>
+        <p>. CAREFULLY WRAPPED: With extra attention paid to careful wrapping, this Money Tree is packaged for a
+        safe journey</p>
+        <p>. Number Of Pieces: 1</p>
+
+    </div>
+<!-- FAQ Section -->
+     <div class="container">
+    <div class="my-5">
+        <hr><h2 class="text-center">Frequently Asked Questions</h2><hr>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How to care this plant?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        This beautiful Money Tree, also called Pachira, has a way of offering a sense of calm to the
+                        environment. Not at all finicky, the care requirement for this slow-growing Money Tree
+                        houseplant is minimal. Keep soil moderately moist, allowing the soil to dry on the surface
+                        before re-watering.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Arcadia garden products money tree has fragrance?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, this plant does not have fragrance.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<h5>Some Thing Else You Want To Ask?</h5>
+              <form class="d-flex mb-4">
+                <input class="form-control me-2" type="email" placeholder="ASK QUESTION YOU WANT" aria-label="text">
+                <button class="btn btn-outline-success" type="submit">Submit</button>
+              </form>
+            </div>
+
+            <!-- More Products Sectio -->
+             <div class="container my-5">
+                <div class="row">
+                    <hr><h2 class="text-center">You May Also Like</h2><hr>
+                    <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-header">
+                            <img src="/e-project/assets/images/Bloomscape Bamboo Palm Plant With Pot.webp" class="card-img-top" alt="Product Image"
+                              height="320px">
+                            <button class="quick-add-btn">Quick Add</button>
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Bloomscape Bamboo Palm Plant With Pot</h5>
+                            <p class="price">$39.99</p>
+                
+                          </div>
+                        </div>
+                      </div>
+                
+                      <!-- Card 3 -->
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-header">
+                            <img src="/e-project/assets/images/Growers Choice Plant Set 12 Pack Easy to Grow Houseplants.webp" class="card-img-top"
+                              alt="Product Image" height="295px">
+                            <button class="quick-add-btn">Quick Add</button>
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Growers Choice Plant 12 Pack Houseplants</h5>
+                            <p class="price">$39.99</p>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <!-- Card 4 -->
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-header">
+                            <button class="quick-add-btn mt-1">Quick Add</button>
+                            <img src="/e-project/assets/images/Pachira Braid Indoor Money Tree Plant.webp" class="card-img-top" alt="Product Image"
+                              height="320px">
+                
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">Pachira Braid Indoor Money Tree Plant</h5>
+                            <p class="price">$18.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+             </div>
+            
+
+    <footer class="footer">
+        <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+            </div>
+            
+            <!-- Customer Service -->
+            <div class="col-md-2">
+              <h5>Customer Service</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Shipping Terms</a></li>
+                <li><a href="#">Warranty & Repair</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Payment Policy</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Kors Services</a></li>
+              </ul>
+            </div>
+            <!-- My Account -->
+            <div class="col-md-2">
+              <h5>My Account</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Create Account</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">KORSVIP</a></li>
+                <li><a href="#">Give 10%, Get 10%</a></li>
+              </ul>
+            </div>
+            <!-- Company -->
+            <div class="col-md-2">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Supply Chain Disclosure</a></li>
+                <li><a href="#">Corporate Social Responsibility</a></li>
+              </ul>
+            </div>
+            <!-- Subscription Form -->
+            <div class="col-md-4">
+              <h5>Sign Up</h5>
+              <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+              <form class="d-flex">
+                <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+                <button class="btn btn-outline-success" type="submit">Submit</button>
+              </form>
+              <div class="social-icons m-4">
+                <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="container-fluid p-2 bg-dark">
+        <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+</body>
+
+</html>

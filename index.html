@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css ">
+   
+   <style>
+    .navbar-top {
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        text-align: center;
+      }
+      .navbar-brand img{
+          box-sizing: border-box;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      .nav-link {
+        color: black;
+        font-size: 1rem;
+      }
+      .nav-link:hover {
+        color: red;
+      }
+      
+       .h1{ 
+        margin-top: -100px;
+        color: white;
+       }
+       .img1{
+       
+       margin-left: 300px;
+       width: 800px;
+       
+       }
+       .custom-button {
+      background-color: rgb(5, 43, 5); /* Dark green */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 2px 30px;
+  }
+
+  .custom-button:hover {
+      background-color: rgb(39, 68, 39); /* Lighter green on hover */
+  }
+  .container2{
+    margin-top: 100px;
+  }
+      
+  .a1{
+    text-decoration: none;
+    color: white;
+  }
+  .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+        .banner {
+          margin-top: 50px;
+            position: relative;
+            width: 100%;
+            height: 500px; 
+            background-image: url('/e-project/assets/images/Untitled\ design\ \(2\).png'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+  
+        .container3{
+          margin-top: 30px;
+          width: 100%;
+          height: 100px;
+          
+        }
+        .heading{
+          text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: black;
+        }
+        .heading1{
+          font-size: 2rem;
+            font-weight: bold;
+        }
+        .para1{
+          font-size: 1rem;
+            color: gray;
+        } 
+        .btn-long {
+              width: 40%; /* Makes the button take full width */
+            }
+       .banner2{
+        margin-top: 50px;
+            position: relative;
+            width: 100%;
+            height: 500px; 
+            background-size: cover;
+            background-position: center;
+       }
+       .footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  .footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .banner3{
+    margin-top: 50px;
+            position: relative;
+            width: 100%;
+            height: 500px; 
+            background-size: cover;
+            background-position: center;
+  }
+  .banner3-text{
+    margin-top: 210rem;
+  }
+    </style>
+
+   
+</head>
+
+<body>
+   
+
+    <div class="navbar-top">
+        <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+      </div>
+      
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PLANTS AND SEEDS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+                      <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      GARDEN CARE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="garden care.html">SOIL</a></li>
+                      <li><a class="dropdown-item" href="garden care.html">FERTILIZER</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="garden care.html">PEPTICIDES</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACCESSORIES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="accessories.html">GARDEN TOYS</a></li>
+                      <li><a class="dropdown-item" href="accessories.html">DECORATIVE PEBBLES</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="accessories.html">TOOLS</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item"><a class="nav-link" href="tips & techniquies.html">TIPS AND TECHNIQUES</a></li>
+             
+            </ul>
+            <div class="d-flex">
+              <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></a>
+              <a class="nav-link" href="login.html"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success m-1" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container text-center mt-5">
+        <div class="d-flex justify-content-center gap-4">
+            <button class="custom-button"> <a href="plant.html" class="a1">PLANTS</a></button>
+            <button class="custom-button"><a href="plant.html" class="a1">SEEDS</a></button>
+            <button class="custom-button"><a href="garden care.html" class="a1">GARDEN CARE</a></button>
+            <button class="custom-button"><a href="accessories.html" class="a1">ACCESSORIES</a></button>
+            <button class="custom-button"><a href="tips & techniquies.html" class="a1">TIPS AND TECHNIQUES</a></button>
+            <button class="custom-button"><a href="index.html" class="a1">VIEW All</a></button>
+        </div>
+      </div>
+
+    <div class="container2 ">
+       
+      <div id="carouselExampleIndicators" class="carousel slide carousel-dark">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/e-project/assets/images/Add a subheading.png" class="d-block img1 height-500px" alt="img">
+          </div>
+          <div class="carousel-item">
+            <img src="/e-project/assets/images/Indoor plants the simplest way to bring life and harmony into any space..png" class="d-block img1 height-500px " alt="img">
+          </div>
+          <div class="carousel-item">
+            <img src="/e-project/assets/images/Indoor plants the simplest way to bring life and harmony into any space. (1).png" class="d-block img1 height-400px" alt="img">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="mb-4">Plants That Inspire</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+  
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 text-center border-1">
+                   <a href="plant.html"> <img src="/e-project/assets/images/Arcadia Garden Products Money Tree.webp" class="card-img-top" alt="Marilyn Satchel"></a>
+                    <div class="card-body">
+                        <h6 class="card-title">Arcadia Garden Products Money</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 text-center border-1">
+                   <a href="#"> <img src="/e-project/assets/images/arboricola-braid-plant.jpg" class="card-img-top" alt="Taryn Crossbody" height="300PX"></a>
+                    <div class="card-body">
+                        <h6 class="card-title">Arboricola-Braid</h6>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 text-center border-1">
+                   <a href="plant.html"><img src="/e-project/assets/images/sansevieria-houseplant.jpeg" class="card-img-top" alt="Toni Trainer" height="290px"></a>
+                    <div class="card-body">
+                        <h6 class="card-title">Sansevieria-Houseplant</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 text-center border-1">
+                    <a href="plant.html"><img src="/e-project/assets/images/American Plant Exchange Bird of Paradise.webp" class="card-img-top" alt="Wool Sweaterdress"></a>
+                    <div class="card-body">
+                        <h6 class="card-title">American Plant Exchange Bird of Paradise</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container-fluid p-0">
+        <div class="banner">
+          
+          
+            
+        </div>
+    </div>
+    <div class="container3">
+      <div class="heading">
+        <div class="heading1">Organic Fertilizers for Organic Growth!</div>
+        <div class="para1">Choose eco-friendly solutions <br>to enrich your soil and protect the planet.</div>
+        </div>
+     
+    </div>
+    
+        <div class="container-fluid pt-5 mt-5">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3 col-sm-5 mb-3">
+                    <div class="card">
+                        <img src="/e-project/assets/images/WhatsApp Image 2025-01-01 at 4.25.02 AM (1).jpeg" class="card-img-top" alt="img" height="390px">
+                        <div class="card-body text-center">
+                            <a href="https://a.co/d/izBb7Sf" class="text-decoration-none " style="color: black;">The 5-minute Gardener</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 col-sm-5 mb-3">
+                    <div class="card">
+                        <img src="/e-project/assets/images/WhatsApp Image 2025-01-01 at 4.25.02 AM (2).jpeg" class="card-img-top" alt="img">
+                        <div class="card-body text-center">
+                            <a href="https://a.co/d/dmWqJOR" class="text-decoration-none"  style="color: black;">Houseplants for Beginners</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 col-sm-5 mb-3">
+                    <div class="card">
+                        <img src="/e-project/assets/images/WhatsApp Image 2025-01-01 at 4.25.02 AM (3).jpeg" class="card-img-top" alt="img">
+                        <div class="card-body text-center">
+                            <a href="https://a.co/d/gQMTsv5" class="text-decoration-none"  style="color: black;">Garden Roses</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 col-sm-5 mb-3">
+                    <div class="card">
+                        <img src="/e-project/assets/images/WhatsApp Image 2025-01-01 at 4.25.02 AM.jpeg" class="card-img-top" alt="img">
+                        <div class="card-body text-center">
+                            <a href="https://a.co/d/6ebIg3L" class="text-decoration-none"  style="color: black;">Vegetable Gardening for Beginners</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="container text-center mt-5">
+            <a 
+              href="add to cart.html" 
+              class="btn btn-outline-dark btn-lg btn-long" 
+              role="button" 
+              aria-label="Shop Now Button to access the store"
+            >
+              Shop Now
+            </a>
+          </div>
+          <div class="container-fluid p-0">
+            <div class="banner2">
+              <img src="/e-project/assets/images/Start Your Gardening Journey.png" alt="img" height="500px" width="100%">
+              </div>
+                </div>
+                <div class="container3">
+                  <div class="heading">
+                    <div class="heading1">Trowels & Hand Tools</div>
+                    <div class="para1">Perfect for planting, weeding, and transplanting in small spaces</div>
+                    </div>
+                 
+                </div>
+                <!DOCTYPE html>
+
+  <div class="container-fluid p-0 mb-5 pb-5">
+    <div class="banne3r">
+      <img 
+        src="/e-project/assets/images/Untitled design (3).png" 
+        class="img-fluid w-100" 
+        alt="Beautiful garden with vibrant flowers" 
+        aria-label="Banner showcasing a garden with colorful flowers and greenery"
+        height="100px"
+      
+      >
+      <div class="banner3-text position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="display-4">Welcome to Green Paradise</h1>
+        <p class="lead">Your gateway to a greener, more vibrant world.</p>
+        <a href="films.html" class="btn btn-outline-light btn-lg">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+                <footer class="footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+                      </div>
+                      
+                      <!-- Customer Service -->
+                      <div class="col-md-2">
+                        <h5>Customer Service</h5>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Returns & Exchanges</a></li>
+                          <li><a href="#">Shipping Terms</a></li>
+                          <li><a href="#">Warranty & Repair</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Payment Policy</a></li>
+                          <li><a href="#">Gift Cards</a></li>
+                          <li><a href="#">Kors Services</a></li>
+                        </ul>
+                      </div>
+                      <!-- My Account -->
+                      <div class="col-md-2">
+                        <h5>My Account</h5>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Create Account</a></li>
+                          <li><a href="#">Accounts</a></li>
+                          <li><a href="#">Track My Order</a></li>
+                          <li><a href="#">KORSVIP</a></li>
+                          <li><a href="#">Give 10%, Get 10%</a></li>
+                        </ul>
+                      </div>
+                      <!-- Company -->
+                      <div class="col-md-2">
+                        <h5>Company</h5>
+                        <ul class="list-unstyled">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">Investor Relations</a></li>
+                          <li><a href="#">Supply Chain Disclosure</a></li>
+                          <li><a href="#">Corporate Social Responsibility</a></li>
+                        </ul>
+                      </div>
+                      <!-- Subscription Form -->
+                      <div class="col-md-4">
+                        <h5>Sign Up</h5>
+                        <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="social-icons m-4">
+                          <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+                          <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+                <div class="container-fluid p-2 bg-dark">
+                  <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+               </div>
+
+  
+
+   
+    
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

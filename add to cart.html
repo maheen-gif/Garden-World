@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         .navbar-top {
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        text-align: center;
+      }
+      .navbar-brand img{
+          box-sizing: border-box;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      .nav-link {
+        color: black;
+        font-size: 1rem;
+      }
+      .nav-link:hover {
+        color: red;
+      }
+      .footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  .footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+    </style>
+</head>
+<body>
+    <div class="navbar-top">
+        <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+      </div>
+      
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PLANTS AND SEEDS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+                      <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      GARDEN CARE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="garden care.html">SOIL</a></li>
+                      <li><a class="dropdown-item" href="garden care.html">FERTILIZER</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="garden care.html">PEPTICIDES</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ACCESSORIES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="accessories.html">GARDEN TOYS</a></li>
+                      <li><a class="dropdown-item" href="accessories.html">DECORATIVE PEBBLES</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="accessories.html">TOOLS</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item"><a class="nav-link" href="#">TIPS AND TECHNIQUES</a></li>
+             
+            </ul>
+            <div class="d-flex">
+              <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></a>
+              <a class="nav-link" href="login.html"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success m-1" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Your Cart</h1>
+        <div class="row">
+            <!-- Product Table -->
+            <div class="col-lg-8">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="/e-project/assets/images/American Plant Exchange Bird of Paradise.webp" alt="Product Image" class="me-3">
+                                    <span>American Plant Exchange Bird of Paradise</span>
+                                </div>
+                            </td>
+                            <td>$120</td>
+                            <td>
+                                <div class="input-group input-group-sm">
+                                    <button class="btn btn-outline-secondary">-</button>
+                                    <input type="text" class="form-control text-center" value="2">
+                                    <button class="btn btn-outline-secondary">+</button>
+                                </div>
+                            </td>
+                            <td>$240</td>
+                            <td><button class="btn btn-danger btn-sm">&times;</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="/e-project/assets/images/WhatsApp Image 2025-01-01 at 4.25.02 AM (3).jpeg" alt="Product Image" class="me-3" height="300px">
+                                    <span>Garden Roses</span>
+                                </div>
+                            </td>
+                            <td>$132</td>
+                            <td>
+                                <div class="input-group input-group-sm">
+                                    <button class="btn btn-outline-secondary">-</button>
+                                    <input type="text" class="form-control text-center" value="1">
+                                    <button class="btn btn-outline-secondary">+</button>
+                                </div>
+                            </td>
+                            <td>$132</td>
+                            <td><button class="btn btn-danger btn-sm">&times;</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="/e-project/assets/images/Arcadia Garden Products Money Tree2.webp" alt="Product Image" class="me-3">
+                                    <span>Indoor plant</span>
+                                </div>
+                            </td>
+                            <td>$23</td>
+                            <td>
+                                <div class="input-group input-group-sm">
+                                    <button class="btn btn-outline-secondary">-</button>
+                                    <input type="text" class="form-control text-center" value="2">
+                                    <button class="btn btn-outline-secondary">+</button>
+                                </div>
+                            </td>
+                            <td>$46</td>
+                            <td><button class="btn btn-danger btn-sm">&times;</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Order Summary</h5>
+                        <hr>
+                        <p class="d-flex justify-content-between">
+                            <span>Subtotal</span>
+                            <span>$418</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </p>
+                        <p class="text-primary">Add coupon code</p>
+                        <hr>
+                        <h5 class="d-flex justify-content-between">
+                            <span>Total</span>
+                            <span>$418</span>
+                        </h5>
+                        <button class="btn btn-success w-100 mt-3" onclick="showNotification('Items added to cart successfully!')">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toastNotification" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Items added to cart successfully!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+            </div>
+            
+            <!-- Customer Service -->
+            <div class="col-md-2">
+              <h5>Customer Service</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Shipping Terms</a></li>
+                <li><a href="#">Warranty & Repair</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Payment Policy</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Kors Services</a></li>
+              </ul>
+            </div>
+            <!-- My Account -->
+            <div class="col-md-2">
+              <h5>My Account</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Create Account</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">KORSVIP</a></li>
+                <li><a href="#">Give 10%, Get 10%</a></li>
+              </ul>
+            </div>
+            <!-- Company -->
+            <div class="col-md-2">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Supply Chain Disclosure</a></li>
+                <li><a href="#">Corporate Social Responsibility</a></li>
+              </ul>
+            </div>
+            <!-- Subscription Form -->
+            <div class="col-md-4">
+              <h5>Sign Up</h5>
+              <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+              <form class="d-flex">
+                <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <div class="social-icons m-4">
+                <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="container-fluid p-2 bg-dark">
+        <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showNotification(message) {
+            const toastElement = document.getElementById('toastNotification');
+            const toastBody = toastElement.querySelector('.toast-body');
+            toastBody.textContent = message;
+
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar-top">
+        <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+      </div>
+    
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PLANTS AND SEEDS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+                  <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  GARDEN CARE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#soil">SOIL & FERTILIZER</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#pesticide">PESTICIDES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ACCESSORIES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="accessories.html">GARDEN TOYS</a></li>
+                  <li><a class="dropdown-item" href="accessories.html">DECORATIVE PEBBLES</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="accessories.html">TOOLS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">TIPS AND TECHNIQUES</a></li>
+    
+            </ul>
+            <div class="d-flex">
+              <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/e-project/assets/images/soil7.webp" class="d-block w-100" alt="banner" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>PESTICIDES & FERTILIZERS</h1>
+                <p class="banner">Where roots run deep and beauty blooms.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/e-project/assets/images/soil6.webp" class="d-block w-100" alt="banner" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>PESTICIDES& FERTILIZERS</h1>
+                <p class="banner">Rooted in quality, growing with care.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/e-project/assets/images/soil7.webp" class="d-block w-100" alt="banner" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>PESTICIDES& FERTILIZERS</h1>
+                <p class="banner">Fertilizing the future, one plant at a time.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <div class="container text-center">
+        <hr>
+        <h1 id="soil">SOIL & FERTILIZERS</h1>
+        <hr>
+      </div>
+    
+      <div class="container my-5">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/Dr Earth Root Zone Starter Fertilizer.webp" class="card-img-top" alt="Product Image" height="320px">
+                <button class="quick-add-btn"><a href="#">Quick Add</a></button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr Earth Root Zone Starter Fertilizer</h5>
+                <p class="price">$49.99</p>
+              </div>
+            </div>
+          </div>
+                                                                                
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/TerraBoost Liquid Fertilize.webp" class="card-img-top" alt="Product Image"
+                  height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">TerraBoost Liquid Fertilize</h5>
+                <p class="price">$39.99</p>
+    
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/BuildASoil Build-A-Flower Top Dress Kit.webp" class="card-img-top"
+                  alt="Product Image" height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">BuildASoil Build-A-Flower Top Dress Kit</h5>
+                <p class="price">$39.99</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <button class="quick-add-btn mt-1">Quick Add</button>
+                <img src="/e-project/assets/images/BuildASoil Premium Organic Potting Soil.webp" class="card-img-top" alt="Product Image"
+                  height="320px">
+    
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">BuildASoil Premium Organic Potting Soil</h5>
+                <p class="price">$18.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/Greenview Plant Fertilizer 21-00563.webp" class="card-img-top" alt="Product Image"
+                  height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Greenview Plant Fertilizer </h5>
+                <p class="price">$40.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/AgroThrive General Purpose Fertilizer.webp" class="card-img-top"
+                  alt="Product Image" height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">AgroThrive General Purpose Fertilizer</h5>
+                <p class="price">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="container text-center">
+        <hr>
+        <h1 id="pesticide">PESTICIDES</h1>
+        <hr>
+      </div>
+    
+      <div class="container my-5">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/CrossFire Bed Bug Concentrate.webp" class="card-img-top" alt="Product Image"
+                  height="320px">
+                <button class="quick-add-btn"><a href="#">Quick Add</a></button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">CrossFire Bed Bug Concentrate</h5>
+                <p class="price">$49.99</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/Bifen Insecticide.webp" class="card-img-top" alt="Product Image" height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bifen Insecticide</h5>
+                <p class="price">$39.99</p>
+    
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/Demand CS Insecticide.webp" class="card-img-top" alt="Product Image" height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Demand CS Insecticide</h5>
+                <p class="price">$39.99</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <button class="quick-add-btn mt-1">Quick Add</button>
+                <img src="/e-project/assets/images/BONIDE Captain Jack's Deadbug Brew.webp" class="card-img-top" alt="Product Image" height="320px">
+    
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">BONIDE Captain Jack's Deadbug Brew</h5>
+                <p class="price">$18.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/Richgro Bug Killa Granular Insecticide.webp" class="card-img-top" alt="Product Image" height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Richgro Bug Killa Granular Insecticide</h5>
+                <p class="price">$40.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="/e-project/assets/images/Talstar P Insecticide.webp" class="card-img-top"
+                  alt="Product Image" height="320px">
+                <button class="quick-add-btn">Quick Add</button>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Talstar P Insecticide</h5>
+                <p class="price">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    
+      
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+            </div>
+            
+            <!-- Customer Service -->
+            <div class="col-md-2">
+              <h5>Customer Service</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Returns & Exchanges</a></li>
+                <li><a href="#">Shipping Terms</a></li>
+                <li><a href="#">Warranty & Repair</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Payment Policy</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Kors Services</a></li>
+              </ul>
+            </div>
+            <!-- My Account -->
+            <div class="col-md-2">
+              <h5>My Account</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Create Account</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">KORSVIP</a></li>
+                <li><a href="#">Give 10%, Get 10%</a></li>
+              </ul>
+            </div>
+            <!-- Company -->
+            <div class="col-md-2">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Supply Chain Disclosure</a></li>
+                <li><a href="#">Corporate Social Responsibility</a></li>
+              </ul>
+            </div>
+            <!-- Subscription Form -->
+            <div class="col-md-4">
+              <h5>Sign Up</h5>
+              <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+              <form class="d-flex">
+                <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+                <button class="btn btn-outline-success" type="submit">Submit</button>
+              </form>
+              <div class="social-icons m-4">
+                <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="container-fluid p-2 bg-dark">
+        <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+     </div>
+     
+     
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

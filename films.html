@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css"> 
+  <style>
+    /* basic reset */
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar-top {
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.navbar-brand img {
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+/* all h1's styling */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* plants information section */
+p {
+  font-size: 1.1em;
+}
+
+h5 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.para {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+/* video section */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px;
+  text-align: center;
+}
+
+/* video in center */
+video {
+  width: 80%;
+  height: 60%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content below the video */
+.content {
+  margin-top: 30px;
+}
+
+.content .p1 {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Gardening tips section */
+.card {
+  border: none;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+  text-align: justify;
+  font-family: 0.9em;
+}
+
+/* Additional info section */
+.para1 {
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Blogs section heading */
+.blog-heading {
+  text-align: center;
+  padding: 2rem;
+  background-color: #8cc084;
+  color: #fff;
+}
+
+.blog-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.blog-heading p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Blogs section body */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #8cc084;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.timeline-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+  position: relative;
+  flex: 1;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h2 {
+  font-size: 1.5rem;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #2c5f2d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #5aa870;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  background-color: #8cc084;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* images section */
+.flower-images {
+  margin: 20px 0;
+  display: flex;
+}
+.flower-images img {
+  width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.caption {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* fertilizers section */
+.fertilizers-section h1.section-title {
+  letter-spacing: 2px;
+}
+
+/* Fertilizers 1 to 5 */
+.fertilizer-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.fertilizer-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.fertilizer-image {
+  transition: transform 0.3s ease;
+}
+
+.fertilizer-image:hover {
+  transform: scale(1.05);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar-top">
+    <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PLANTS AND SEEDS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+              <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              GARDEN CARE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="garden care.html">SOIL</a></li>
+              <li><a class="dropdown-item" href="garden care.html">FERTILIZER</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="garden care.html">PEPTICIDES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ACCESSORIES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="accessories.html">GARDEN TOYS</a></li>
+              <li><a class="dropdown-item" href="accessories.html">DECORATIVE PEBBLES</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="accessories.html">TOOLS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="tips & techniquies.html">TIPS AND TECHNIQUES</a></li>
+
+        </ul>
+        <div class="d-flex">
+          <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+          <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></i></a>
+          <a class="nav-link" href="login.html"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></i></a>
+        </div>
+      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <!-- plants information section -->
+  <div class="container-fluid text-center my-5">
+    <h1 class="mb-3">DISCOVER THE WORLD OF PLANTS</h1>
+    <p class="text-muted mb-4">Beauty, Serenity, and Life in every Leaf</p>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="/e-project/assets/images/zebra-plant.jpeg" alt="plant1" class="img-fluid mb-3">
+        <h5>ZEBRA PLANT</h5>
+        <h6>(Aphelandra Squarrosa)</h6>
+        <p class="para">
+          A tropical houseplant with bold white-stripped
+          green leaves and occasional yellow blooms. Prefers bright, indirect light and moist soil, adding elegance to
+          any space.</p>
+      </div>
+      <div class="col-md-3">
+        <img src="/e-project/assets/images/dieffenbachia-plant-large.jpeg" alt="plant2" class="img-fluid mb-3">
+        <h5>DIEFFENBACHIA PLANT</h5>
+        <h6>(Dumb Cane)</h6>
+        <p class="para">
+          A popular indoor plant with large, lush green leaves featuring creamy white patterns. Easy to care for,it
+          thrives in indirect light and moderate watering, adding a tropical touch to any home.</p>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <img src="/e-project/assets/images/arboricola-braid-plant (1).jpg" alt="plant3" class="img-fluid mb-3">
+        <h5>ARBORICOLA BRAID PLANT</h5>
+        <h6>(Schefflera Arboricola)</h6>
+        <p class="para">A stunning indoor plant with glossy green leaves and braided
+          trunks. Thrives in bright, indirect light and minimal watering, making it a stylish and low-maintenance choice
+          for any space.</p>
+      </div>
+      <div class="col-md-3">
+        <img src="/e-project/assets/images/sansevieria-houseplant (1).jpeg" alt="plant4" class="img-fluid mb-3">
+        <h5>SANSEVIERIA PLANT</h5>
+        <h6>(Snake Plant)</h6>
+        <p class="para">A hardy, air-purifying plant with tall, upright leaves and
+          striking green patterns. Thrives in low light, requires minimal watering, and is perfect for beginners.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- video section -->
+  <div class="video-container">
+    <!-- video in center -->
+    <video autoplay muted loop>
+      <source src="/e-project/assets/videos/c.mp4" type="video/mp4">
+    </video>
+
+    <!-- Content Below the Video -->
+    <div class="content">
+      <h1>"Creative Vertical Garden: Upcycled Planters for a Greener Space"</h1>
+      <p class="p1">Discover the charm of sustainable gardening with this creative
+        vertical garden.
+        Showcasing upcycled tin cans
+        painted in vibrant colors, these planters breathe life into any wall while adding a splash of artistic flair.
+        This
+        eco-friendly approach not only promotes recycling but also transforms ordinary spaces into lively, green
+        sanctuaries.
+        Perfect for small spaces and urban living, this design emphasizes the beauty of plants and the
+        potential of reusing everyday items creatively.</p>
+      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+    </div>
+  </div>
+
+  <!-- Gardening Tips Section -->
+  <section class="container my-5">
+    <h1 class="text-center mb-4">Gardening Tips and Techniques</h1>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="/e-project/assets/images/soil-jpeg.jpg" class="card-img-top rounded-top" alt="Soil Management" style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title text-success">Soil Management</h5>
+            <p class="card-text">Maintain healthy soil by testing its pH levels and adding organic compost. Healthy soil
+              is the foundation of a thriving garden.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="/e-project/assets/images/smart watering.jpeg" class="card-img-top rounded-top" alt="Smart Watering" style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title text-success">Smart Watering</h5>
+            <p class="card-text">Water early in the morning to reduce evaporation and use drip irrigation for
+              efficiency. Conserve water with rain barrels!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="/e-project/assets/images/diycomposting (1).webp" class="card-img-top rounded-top" alt="DIY Composting" style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title text-success">DIY Composting</h5>
+            <p class="card-text">Recycle kitchen scraps and yard waste into nutrient-rich compost that will supercharge
+              your garden soil naturally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Info Section -->
+  <section class="container-fluid bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">More Techniques to Explore</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5 class="text-success">Pest Control</h5>
+          <p class="para1">Use organic methods like neem oil or attract beneficial insects like ladybugs to control
+            pests naturally.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-success">Sustainable Gardening Practices</h5>
+          <p class="para1">Sustainable gardening uses eco-friendly methods like composting and planting native spices to
+            protect the
+            enviroment.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-success">Seasonal Gardening</h5>
+          <p class="para1">Plant according to the season for optimal growth and a year-round garden filled with blooms
+            and veggies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Tutorial -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">Video Tutorial: Sustainable Gardening Practices</h2>
+    <div class="ratio ratio-16x9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oL9HuShBUGg?si=ehqke7TXFZaLVHNJ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+
+
+  <!-- Blogs section header -->
+  <div class="blog-heading">
+    <h1>Explore Garden World Blogs</h1>
+    <p>Discover tips, ideas, and inspiration for your perfect garden.</p>
+  </div>
+
+  <!-- Blogs section body -->
+  <section class="timeline">
+    <!-- Blog 1 -->
+    <div class="timeline-item">
+      <img src="/e-project/assets/images/blog1.jpg" alt="Starting Your First Garden">
+      <div class="timeline-content">
+        <h2>10 Easy Steps to Start Your First Garden</h2>
+        <p>Starting your first garden can be exciting yet overwhelming. Follow these 10 simple steps to create your
+          dream green space...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="timeline-item">
+      <img src="/e-project/assets/images/blog2.jpg" alt="Stunning Flower Garden">
+      <div class="timeline-content">
+        <h2>How to Create a Stunning Flower Garden</h2>
+        <p>Transform your outdoor space with vibrant blooms. Learn the secrets to designing and maintaining a beautiful
+          flower garden...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="timeline-item">
+      <img src="/e-project/assets/images/blog3.jpg" alt="Compost Bin">
+      <div class="timeline-content">
+        <h2>How to Start a Compost Bin in Your Backyard</h2>
+        <p>Recycling kitchen and garden waste has never been easier. Discover how to create and maintain your own
+          compost bin...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+
+  <!-- Images section -->
+  <div class="container-fluid text-center">
+    <h1 class="my-5">BLOOMING BEAUTY, NATURE'S FINEST ART</h1>
+    <div class="flower-images">
+      <!-- First Flower Image -->
+      <img src="/e-project/assets/images/flower1.jpg" alt="Beautiful Flower 1" style="height: 600px;">
+      <!-- Second Flower Image -->
+      <img src="/e-project/assets/images/flower2_586x755.jpeg" alt="Beautiful Flower 2" style="height: 600px;">
+    </div>
+    <p class="caption mt-3 mb-5">"Every flower is a story waiting to bloom."</p>
+  </div>
+
+  <!-- Fertilizers section -->
+  <section class="fertilizers-section py-5 mb-5">
+    <div class="container">
+      <h1 class="section-title text-center mb-5">FERTILIZERS: NOURISHING YOUR GARDEN FOR HEALTHY GROWTH</h1>
+
+      <!-- Fertilizer 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="/e-project/assets/images/fertilizer1.jpg" alt="Nitrogen Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+          <h2 class="fertilizer-title">Nitrogen-Based Fertilizers</h2>
+          <p class="fertilizer-description">Promote leaf and stem growth. Best for green leafy plants like
+            lettuce, spinach, and grass.</p>
+        </div>
+      </div>
+
+      <!-- Fertilizer 2 -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+          <img src="/e-project/assets/images/fertilizer3.jpg" alt="Phosphorus Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+          <h2 class="fertilizer-title">Phosphorus-Based Fertilizers</h2>
+          <p class="fertilizer-description">Encourage strong root development and flowering. Best for root
+            crops and flowering plants.</p>
+        </div>
+      </div>
+
+      <!-- Fertilizer 3 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="/e-project/assets/images/fertilizer2.jpg" alt="Potassium Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+          <h2 class="fertilizer-title">Potassium-Based Fertilizers</h2>
+          <p class="fertilizer-description">Enhance disease resistance and plant health. Best for
+            fruit-bearing plants like tomatoes and cucumbers.</p>
+        </div>
+      </div>
+
+      <!-- Fertilizer 4 -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+          <img src="/e-project/assets/images/fertilizer4.jpg" alt="Organic Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+          <h2 class="fertilizer-title">Organic Fertilizers</h2>
+          <p class="fertilizer-description">Improve soil quality and structure with natural nutrients. Ideal
+            for sustainable gardening.</p>
+        </div>
+      </div>
+
+      <!-- Fertilizer 5 -->
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="/e-project/assets/images/fertilizer5.jpg" alt="Complete Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+          <h2 class="fertilizer-title">Complete Fertilizers</h2>
+          <p class="fertilizer-description">A balanced mix of nutrients. Best for general-purpose use across
+            various plants.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+        </div>
+
+        <!-- Customer Service -->
+        <div class="col-md-2">
+          <h5>Customer Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Terms</a></li>
+            <li><a href="#">Warranty & Repair</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Payment Policy</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Kors Services</a></li>
+          </ul>
+        </div>
+        <!-- My Account -->
+        <div class="col-md-2">
+          <h5>My Account</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Create Account</a></li>
+            <li><a href="#">Accounts</a></li>
+            <li><a href="#">Track My Order</a></li>
+            <li><a href="#">KORSVIP</a></li>
+            <li><a href="#">Give 10%, Get 10%</a></li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div class="col-md-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Supply Chain Disclosure</a></li>
+            <li><a href="#">Corporate Social Responsibility</a></li>
+          </ul>
+        </div>
+        <!-- Subscription Form -->
+        <div class="col-md-4">
+          <h5>Sign Up</h5>
+          <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+          <form class="d-flex">
+            <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <div class="social-icons m-4">
+            <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="container-fluid p-2 bg-dark">
+    <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+  <script src="form.js"></script>
+  
+</body>
+
+</html>
