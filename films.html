@@ -6,294 +6,300 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plants</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="style.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
     /* basic reset */
-body {
-  font-family: "Times New Roman", Times, serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
 
-/* Navbar */
-.navbar-top {
-  background-color: black;
-  color: white;
-  padding: 5px 15px;
-  text-align: center;
-}
+    /* Navbar */
+    .navbar-top {
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      text-align: center;
+    }
 
-.navbar-brand img {
-  box-sizing: border-box;
-}
+    .navbar-brand img {
+      box-sizing: border-box;
+    }
 
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
 
-.nav-link {
-  color: black;
-  font-size: 1rem;
-}
+    .nav-link {
+      color: black;
+      font-size: 1rem;
+    }
 
-.nav-link:hover {
-  color: red;
-}
+    .nav-link:hover {
+      color: red;
+    }
 
-/* all h1's styling */
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
+    /* all h1's styling */
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
 
-/* plants information section */
-p {
-  font-size: 1.1em;
-}
+    /* plants information section */
+    p {
+      font-size: 1.1em;
+    }
 
-h5 {
-  font-weight: 600;
-  letter-spacing: 1px;
-}
+    h5 {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
 
-.para {
-  font-size: 0.9em;
-  text-align: justify;
-}
+    .para {
+      font-size: 0.9em;
+      text-align: justify;
+    }
 
-/* video section */
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 15px;
-  text-align: center;
-}
+    /* video section */
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 15px;
+      text-align: center;
+    }
 
-/* video in center */
-video {
-  width: 80%;
-  height: 60%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+    /* video in center */
+    video {
+      width: 80%;
+      height: 60%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-/* Content below the video */
-.content {
-  margin-top: 30px;
-}
+    /* Content below the video */
+    .content {
+      margin-top: 30px;
+    }
 
-.content .p1 {
-  font-size: 0.9em;
-  text-align: center;
-}
+    .content .p1 {
+      font-size: 0.9em;
+      text-align: center;
+    }
 
-/* Gardening tips section */
-.card {
-  border: none;
-}
+    /* Gardening tips section */
+    .card {
+      border: none;
+    }
 
-.card-title {
-  font-weight: bold;
-}
+    .card-title {
+      font-weight: bold;
+    }
 
-.card-text {
-  color: #555;
-  text-align: justify;
-  font-family: 0.9em;
-}
+    .card-text {
+      color: #555;
+      text-align: justify;
+      font-family: 0.9em;
+    }
 
-/* Additional info section */
-.para1 {
-  text-align: center;
-  font-size: 1em;
-}
+    /* Additional info section */
+    .para1 {
+      text-align: center;
+      font-size: 1em;
+    }
 
-/* Blogs section heading */
-.blog-heading {
-  text-align: center;
-  padding: 2rem;
-  background-color: #8cc084;
-  color: #fff;
-}
+    /* Blogs section heading */
+    .blog-heading {
+      text-align: center;
+      padding: 2rem;
+      background-color: #8cc084;
+      color: #fff;
+    }
 
-.blog-heading h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
+    .blog-heading h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
 
-.blog-heading p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
+    .blog-heading p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
 
-/* Blogs section body */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
+    /* Blogs section body */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background-color: #8cc084;
-  z-index: 0;
-}
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #8cc084;
+      z-index: 0;
+    }
 
-.timeline-item {
-  position: relative;
-  margin: 2rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1.5rem;
-}
+    .timeline-item {
+      position: relative;
+      margin: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+    }
 
-.timeline-item:nth-child(odd) {
-  flex-direction: row-reverse;
-}
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
 
-.timeline-item img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .timeline-item img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.timeline-content {
-  position: relative;
-  flex: 1;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .timeline-content {
+      position: relative;
+      flex: 1;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.timeline-content h2 {
-  font-size: 1.5rem;
-  color: #2c5f2d;
-  margin-bottom: 0.5rem;
-}
+    .timeline-content h2 {
+      font-size: 1.5rem;
+      color: #2c5f2d;
+      margin-bottom: 0.5rem;
+    }
 
-.timeline-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
+    .timeline-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
 
-.read-more {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #2c5f2d;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+    .read-more {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #2c5f2d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-.read-more:hover {
-  background-color: #5aa870;
-}
+    .read-more:hover {
+      background-color: #5aa870;
+    }
 
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: calc(50% - 8px);
-  width: 16px;
-  height: 16px;
-  background-color: #8cc084;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  z-index: 1;
-}
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(50% - 8px);
+      width: 16px;
+      height: 16px;
+      background-color: #8cc084;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      z-index: 1;
+    }
 
-/* images section */
-.flower-images {
-  margin: 20px 0;
-  display: flex;
-}
-.flower-images img {
-  width: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.caption {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  text-align: center;
-  color: #6c757d;
-}
+    /* images section */
+    .flower-images {
+      margin: 20px 0;
+      display: flex;
+    }
 
-/* fertilizers section */
-.fertilizers-section h1.section-title {
-  letter-spacing: 2px;
-}
+    .flower-images img {
+      width: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-/* Fertilizers 1 to 5 */
-.fertilizer-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #4caf50;
-  margin-bottom: 15px;
-}
+    .caption {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      text-align: center;
+      color: #6c757d;
+    }
 
-.fertilizer-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-}
+    /* fertilizers section */
+    .fertilizers-section h1.section-title {
+      letter-spacing: 2px;
+    }
 
-.fertilizer-image {
-  transition: transform 0.3s ease;
-}
+    /* Fertilizers 1 to 5 */
+    .fertilizer-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #4caf50;
+      margin-bottom: 15px;
+    }
 
-.fertilizer-image:hover {
-  transform: scale(1.05);
-}
+    .fertilizer-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
 
-.rounded {
-  border-radius: 10px;
-}
+    .fertilizer-image {
+      transition: transform 0.3s ease;
+    }
 
-.shadow {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+    .fertilizer-image:hover {
+      transform: scale(1.05);
+    }
 
-/* footer */
-.footer {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-}
-.footer h5 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.footer a {
-  text-decoration: none;
-  color: #000;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-.social-icons a {
-  margin-right: 10px;
-  font-size: 20px;
-}
+    .rounded {
+      border-radius: 10px;
+    }
+
+    .shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* footer */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .footer h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+    }
   </style>
 </head>
 
@@ -306,7 +312,8 @@ video {
   <nav class="navbar navbar-expand-lg bg-light navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+        <img src="WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px"
+          width="220px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -316,8 +323,8 @@ video {
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               PLANTS AND SEEDS
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -330,8 +337,8 @@ video {
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               GARDEN CARE
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -344,8 +351,8 @@ video {
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               ACCESSORIES
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -361,7 +368,8 @@ video {
 
         </ul>
         <div class="d-flex">
-          <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping" style="margin-right: 10px;"></i></a>
+          <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping"
+              style="margin-right: 10px;"></i></a>
           <a class="nav-link" href="#"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i></i></a>
           <a class="nav-link" href="login.html"><i class="fa-solid fa-user" style="margin-right: 10px;"></i></i></a>
         </div>
@@ -380,7 +388,7 @@ video {
     <p class="text-muted mb-4">Beauty, Serenity, and Life in every Leaf</p>
     <div class="row">
       <div class="col-md-3">
-        <img src="/e-project/assets/images/zebra-plant.jpeg" alt="plant1" class="img-fluid mb-3">
+        <img src="zebra-plant.jpeg" alt="plant1" class="img-fluid mb-3">
         <h5>ZEBRA PLANT</h5>
         <h6>(Aphelandra Squarrosa)</h6>
         <p class="para">
@@ -389,7 +397,7 @@ video {
           any space.</p>
       </div>
       <div class="col-md-3">
-        <img src="/e-project/assets/images/dieffenbachia-plant-large.jpeg" alt="plant2" class="img-fluid mb-3">
+        <img src="dieffenbachia-plant-large.jpeg" alt="plant2" class="img-fluid mb-3">
         <h5>DIEFFENBACHIA PLANT</h5>
         <h6>(Dumb Cane)</h6>
         <p class="para">
@@ -398,7 +406,7 @@ video {
         </p>
       </div>
       <div class="col-md-3">
-        <img src="/e-project/assets/images/arboricola-braid-plant (1).jpg" alt="plant3" class="img-fluid mb-3">
+        <img src="arboricola-braid-plant (1).jpg" alt="plant3" class="img-fluid mb-3">
         <h5>ARBORICOLA BRAID PLANT</h5>
         <h6>(Schefflera Arboricola)</h6>
         <p class="para">A stunning indoor plant with glossy green leaves and braided
@@ -406,7 +414,7 @@ video {
           for any space.</p>
       </div>
       <div class="col-md-3">
-        <img src="/e-project/assets/images/sansevieria-houseplant (1).jpeg" alt="plant4" class="img-fluid mb-3">
+        <img src="sansevieria-houseplant (1).jpeg" alt="plant4" class="img-fluid mb-3">
         <h5>SANSEVIERIA PLANT</h5>
         <h6>(Snake Plant)</h6>
         <p class="para">A hardy, air-purifying plant with tall, upright leaves and
@@ -417,11 +425,11 @@ video {
   </div>
 
 
-<!-- video section -->
+  <!-- video section -->
   <div class="video-container">
     <!-- video in center -->
     <video autoplay muted loop>
-      <source src="/e-project/assets/videos/c.mp4" type="video/mp4">
+      <source src="c.mp4" type="video/mp4">
     </video>
 
     <!-- Content Below the Video -->
@@ -447,7 +455,7 @@ video {
       <!-- Card 1 -->
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="/e-project/assets/images/soil-jpeg.jpg" class="card-img-top rounded-top" alt="Soil Management" style="height: 200px;">
+          <img src="soil-jpeg.jpg" class="card-img-top rounded-top" alt="Soil Management" style="height: 200px;">
           <div class="card-body">
             <h5 class="card-title text-success">Soil Management</h5>
             <p class="card-text">Maintain healthy soil by testing its pH levels and adding organic compost. Healthy soil
@@ -458,7 +466,7 @@ video {
       <!-- Card 2 -->
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="/e-project/assets/images/smart watering.jpeg" class="card-img-top rounded-top" alt="Smart Watering" style="height: 200px;">
+          <img src="smart watering.jpeg" class="card-img-top rounded-top" alt="Smart Watering" style="height: 200px;">
           <div class="card-body">
             <h5 class="card-title text-success">Smart Watering</h5>
             <p class="card-text">Water early in the morning to reduce evaporation and use drip irrigation for
@@ -469,7 +477,8 @@ video {
       <!-- Card 3 -->
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="/e-project/assets/images/diycomposting (1).webp" class="card-img-top rounded-top" alt="DIY Composting" style="height: 200px;">
+          <img src="diycomposting (1).webp" class="card-img-top rounded-top" alt="DIY Composting"
+            style="height: 200px;">
           <div class="card-body">
             <h5 class="card-title text-success">DIY Composting</h5>
             <p class="card-text">Recycle kitchen scraps and yard waste into nutrient-rich compost that will supercharge
@@ -530,7 +539,7 @@ video {
   <section class="timeline">
     <!-- Blog 1 -->
     <div class="timeline-item">
-      <img src="/e-project/assets/images/blog1.jpg" alt="Starting Your First Garden">
+      <img src="blog1.jpg" alt="Starting Your First Garden">
       <div class="timeline-content">
         <h2>10 Easy Steps to Start Your First Garden</h2>
         <p>Starting your first garden can be exciting yet overwhelming. Follow these 10 simple steps to create your
@@ -541,7 +550,7 @@ video {
 
     <!-- Blog 2 -->
     <div class="timeline-item">
-      <img src="/e-project/assets/images/blog2.jpg" alt="Stunning Flower Garden">
+      <img src="blog2.jpg" alt="Stunning Flower Garden">
       <div class="timeline-content">
         <h2>How to Create a Stunning Flower Garden</h2>
         <p>Transform your outdoor space with vibrant blooms. Learn the secrets to designing and maintaining a beautiful
@@ -552,7 +561,7 @@ video {
 
     <!-- Blog 3 -->
     <div class="timeline-item">
-      <img src="/e-project/assets/images/blog3.jpg" alt="Compost Bin">
+      <img src="blog3.jpg" alt="Compost Bin">
       <div class="timeline-content">
         <h2>How to Start a Compost Bin in Your Backyard</h2>
         <p>Recycling kitchen and garden waste has never been easier. Discover how to create and maintain your own
@@ -569,9 +578,9 @@ video {
     <h1 class="my-5">BLOOMING BEAUTY, NATURE'S FINEST ART</h1>
     <div class="flower-images">
       <!-- First Flower Image -->
-      <img src="/e-project/assets/images/flower1.jpg" alt="Beautiful Flower 1" style="height: 600px;">
+      <img src="flower1.jpg" alt="Beautiful Flower 1" style="height: 600px;">
       <!-- Second Flower Image -->
-      <img src="/e-project/assets/images/flower2_586x755.jpeg" alt="Beautiful Flower 2" style="height: 600px;">
+      <img src="flower2_586x755.jpeg" alt="Beautiful Flower 2" style="height: 600px;">
     </div>
     <p class="caption mt-3 mb-5">"Every flower is a story waiting to bloom."</p>
   </div>
@@ -584,7 +593,7 @@ video {
       <!-- Fertilizer 1 -->
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
-          <img src="/e-project/assets/images/fertilizer1.jpg" alt="Nitrogen Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+          <img src="fertilizer1.jpg" alt="Nitrogen Fertilizer" class="fertilizer-image img-fluid rounded shadow">
         </div>
         <div class="col-md-6 text-center text-md-start">
           <h2 class="fertilizer-title">Nitrogen-Based Fertilizers</h2>
@@ -596,7 +605,7 @@ video {
       <!-- Fertilizer 2 -->
       <div class="row align-items-center mb-5 flex-md-row-reverse">
         <div class="col-md-6">
-          <img src="/e-project/assets/images/fertilizer3.jpg" alt="Phosphorus Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+          <img src="fertilizer3.jpg" alt="Phosphorus Fertilizer" class="fertilizer-image img-fluid rounded shadow">
         </div>
         <div class="col-md-6 text-center text-md-start">
           <h2 class="fertilizer-title">Phosphorus-Based Fertilizers</h2>
@@ -608,7 +617,7 @@ video {
       <!-- Fertilizer 3 -->
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
-          <img src="/e-project/assets/images/fertilizer2.jpg" alt="Potassium Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+          <img src="fertilizer2.jpg" alt="Potassium Fertilizer" class="fertilizer-image img-fluid rounded shadow">
         </div>
         <div class="col-md-6 text-center text-md-start">
           <h2 class="fertilizer-title">Potassium-Based Fertilizers</h2>
@@ -620,7 +629,7 @@ video {
       <!-- Fertilizer 4 -->
       <div class="row align-items-center mb-5 flex-md-row-reverse">
         <div class="col-md-6">
-          <img src="/e-project/assets/images/fertilizer4.jpg" alt="Organic Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+          <img src="fertilizer4.jpg" alt="Organic Fertilizer" class="fertilizer-image img-fluid rounded shadow">
         </div>
         <div class="col-md-6 text-center text-md-start">
           <h2 class="fertilizer-title">Organic Fertilizers</h2>
@@ -632,7 +641,7 @@ video {
       <!-- Fertilizer 5 -->
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="/e-project/assets/images/fertilizer5.jpg" alt="Complete Fertilizer" class="fertilizer-image img-fluid rounded shadow">
+          <img src="fertilizer5.jpg" alt="Complete Fertilizer" class="fertilizer-image img-fluid rounded shadow">
         </div>
         <div class="col-md-6 text-center text-md-start">
           <h2 class="fertilizer-title">Complete Fertilizers</h2>
@@ -651,7 +660,8 @@ video {
     <div class="container">
       <div class="row">
         <div class="col-md-2">
-          <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+          <img src="WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px"
+            height="250px">
         </div>
 
         <!-- Customer Service -->
@@ -718,7 +728,7 @@ video {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
   <script src="form.js"></script>
-  
+
 </body>
 
 </html>
